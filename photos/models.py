@@ -9,7 +9,8 @@ from django.dispatch import receiver
 
 class Profile(models.Model):
     pro_picture = models.ImageField(upload_to = 'profile-pics', null=True)
-    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    #user = models.ForeignKey(User,on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     profile_bio = HTMLField()
 
 
