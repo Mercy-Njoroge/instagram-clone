@@ -17,6 +17,19 @@ Has an administration dashboard that allows the admin to post new pics, edit the
 * Follow other users and see their pictures on my timeline.
 * Like a picture and leave a comment on it.
 
+
+## Setup/Installation Requirements
+- Clone the repo locally
+- once cloned, cd into the INSTA-CLONE folder
+- Run command pip install -r requirements.txt to install all dependencies and packages
+- Create a new file .env to house enviroment variables
+- Create a virtual evnitoment and activate it
+- To run the app type python3.6 manage.py runserver
+ - Link to deployed page: [INSTA-CLONE](k-myinsta.herokuapp.com/)
+
+ ## Testing
+ with the virtual enviroment active,run  ./manage.py test
+
 ## Technologies Used
 
 * Python3.6
@@ -35,5 +48,7 @@ Has an administration dashboard that allows the admin to post new pics, edit the
 
 ## License
 
-#### license MIT 
+[MIT License](license) 
+
+© Phylis 
 
