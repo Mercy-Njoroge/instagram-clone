@@ -15,7 +15,8 @@ def welcome(request):
 
 @login_required(login_url='/accounts/login/')
 def home(request):
-    pics = Image.posted_pics()
+    #pics = Image.posted_pics()
+    pics = Image.objects.all()
     comments = Comment.objects.all()
     print(comments)
 

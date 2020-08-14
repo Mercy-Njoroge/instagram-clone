@@ -54,7 +54,7 @@ class WelcomeMessageRecipient(models.Model):
 
 class Comment(models.Model):
     comment = models.TextField(blank=True)
-    image = models.ForeignKey(Image, on_delete=models.CASCADE, null=True)
+    image = models.ForeignKey(Image, on_delete=models.CASCADE, null=True, related_name="comments")
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
    
 
